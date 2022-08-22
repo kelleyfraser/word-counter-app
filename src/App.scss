@@ -29,5 +29,35 @@ $theme-colors: (
   "primary": #001C55,
   "blue": $primary
 );
+
+$primary: #001C55;
+$secondary: #D3D0CB;
+
 // Import Bootstrap
 @import '~bootstrap/scss/bootstrap.scss';
+
+.App {
+    .is-primary-text {
+      color: $primary; 
+    }
+  
+    .is-white-text {
+      color: white;
+    }
+  
+    .is-secondary-background {
+      background-color: $secondary;
+    }
+  }
+
+.results-container {
+    padding: 0 40px;
+    .card {
+      border: none;
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      justify-content: space-between;
+    }
+  }

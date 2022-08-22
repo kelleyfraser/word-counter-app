@@ -9,11 +9,14 @@ const InputForm = ({saveInputData}) => {
       <form>
         <div className="input-group mt-3">
           <textarea 
+            onChange={onChange}
             className="form-control"
             rows="5"
             required />
         </div>
-        <button className="btn btn-primary mt-3">
+        <button 
+            className="btn btn-primary mt-3"
+            onClick={e => {e.preventDefault(); saveInputData(value); resetInput();}}>
             Count
         </button> 
       </form>

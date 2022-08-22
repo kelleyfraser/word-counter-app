@@ -78,6 +78,14 @@ $secondary: #D3D0CB;
     }
 }
 
+.form-container {
+    min-height: 200px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
 .results-container {
     padding: 0 40px;
     .card {

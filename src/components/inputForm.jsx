@@ -10,6 +10,7 @@ const InputForm = ({saveInputData}) => {
         <div className="input-group mt-3">
           <textarea 
             onChange={onChange}
+            value={value}
             className="form-control"
             rows="5"
             required />

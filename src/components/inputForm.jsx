@@ -1,6 +1,8 @@
 import React from 'react';
+import useInputState from '../hooks/useInputState';
 
 const InputForm = ({saveInputData}) => {
+    const {value, resetInput, onChange} = useInputState('');
 
   return (
     <div className="form-container container-fluid text-center">

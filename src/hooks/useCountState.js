@@ -1,7 +1,8 @@
 import {useState} from 'react';
 
-const useCountState = (text) => {
+const useCountState = () => {
   const [counts, setCounts] = useState([]);
+  const [inputText, setInputText] = useState('');
 
   return {
     counts,
@@ -28,10 +29,14 @@ const useCountState = (text) => {
         newCounts.push({id: ++id, number: wordCount, unit: "words"});
 
         setCounts(newCounts);
+        setInputText(text);
     },
+    inputText,
     resetWordCounter: () => {
       const newCounts = [];
+      const newText="";
       setCounts(newCounts);
+      setInputText(newText);
     }
   };
 };

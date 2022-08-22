@@ -37,6 +37,14 @@ $secondary: #D3D0CB;
 @import '~bootstrap/scss/bootstrap.scss';
 
 .App {
+    .btn-icon {
+     font-size: 1.5em;
+    }
+    
+    .btn-icon:hover{
+     cursor: pointer;
+    }
+
     .is-primary-text {
       color: $primary; 
     }
@@ -48,7 +56,27 @@ $secondary: #D3D0CB;
     .is-secondary-background {
       background-color: $secondary;
     }
-  }
+}
+
+.header-container {
+    height: 125px;
+    background-color: $primary;
+    color: white;
+    padding: 10px 20px;
+  
+    .appName {
+      margin-top: 35px;
+    }
+  
+    .btn-icon {
+      margin-left: 98%;
+      transition: all 0.3s;
+    }
+  
+    .btn-icon:hover {
+      transform: rotate(45deg);
+    }
+}
 
 .results-container {
     padding: 0 40px;
@@ -60,4 +88,4 @@ $secondary: #D3D0CB;
       padding: 10px;
       justify-content: space-between;
     }
-  }
+}
